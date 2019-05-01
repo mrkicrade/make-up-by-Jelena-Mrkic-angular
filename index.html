@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jecaApp">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <title>make up by Jelena Mrkic</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="contact">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p id="phone">Tel: +381 66 9 333 549</p>
+            <a id="mail" href="mailto:jelenamrkic86@gmail.com">jelenamrkic86@gmail.com</a><br>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">make up by Jelena Mrkić</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#/">Početna <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/o_nama">O nama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/galerija">Galerija</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <h3 id="prvi">make up by Jelena Mrkić je tu samo za Vas</h3>
+    <div class="hr"></div>
+
+    <ng-view></ng-view>
+
+    
+    <!-- <footer> -->
+    <footer class="main-footer">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container ftop">
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <h4>make up by Jelena Mrkić</h4>
+                        Kruševac, Sterijina 7 <br>
+                        Telefon: +381 66 9 333 549 <br>
+                        Mail: <a href="mailto:jelenamrkic86@gmail.com">jelenamrkic86@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Top End -->
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container clearfix">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <div class="row">
+                            <div class="col-6 cr">
+                                <p>Copyright © by Mrkić Rade. All Rights reserved.</p>
+                            </div>
+                            <div class="col-6 sn">
+                                <ul class="soc-net list-reset">
+                                    <li><a href="http://www.facebook.com/Make-up-by-Jelena-Mrkic-137655417078731/"
+                                            target="_blank" class="facebook">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/make_up_by_jelena_mrkic/?hl=sr"
+                                            target="_blank" class="linked-in">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+    </footer>
+    <!-- Footer End -->
+
+	<script src="js/app.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/controllers/galerijaController.js"></script>
+    <script src="js/controllers/kontaktController.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script> 
+</body>
+</html>
